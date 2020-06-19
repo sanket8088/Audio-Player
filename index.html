@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="player-section">
+            <div id="player-thumbnail">
+                <img id="thumbnail-icon" src="https://m.media-amazon.com/images/I/81mNRm3F6KL._SS500_.jpg"
+                    alt="music-icon">
+            </div>
+            <div id="song-title-artist">
+                <h1 id="main-title">Avicii - Without You</h1>
+            </div>
+            <div id="music-player-controls">
+                <audio id="audiomp3" src="https://edyoda.s3.ap-south-1.amazonaws.com/public/musicfiles/without-you.mp3"
+                    controls></audio>
+                <div id="progress-bar-container">
+                    <span id="duration-played">00:00</span>
+                    <progress value="0" max="100" id="progress-bar"></progress>
+                    <span id="total-duration">03:01</span>
+                </div>
+                <div id=player-controller-button>
+                    <span class="controller" id="shuffle"><i class="fas fa-random"></i></span>
+                    <span class="controller" id="backward"><i class="fas fa-step-backward"></i></span>
+                    <span class="controller" id="play-pause"><i class="fas fa-play" id="play"> </i><i
+                            class="fas fa-pause" id="pause"></i></span>
+                    <!-- <span class="controller" id="pause"><i class="fas fa-pause"></i></span> -->
+                    <span class="controller" id="forward"><i class="fas fa-step-forward"></i></span>
+                    <span class="controller" id="repeat"><i class="fas fa-redo"></i></span>
+                </div>
+                <div id="volume-controller">
+                    <span class="controller" id="speaker-container"><i id="speaker" class="fas fa-volume-up"></i> <i
+                            id="speaker-mute" class="fas fa-volume-mute"></i></span>
+                    <input id="volume-range" value=100 type="range">
+                </div>
+            </div>
+        </div>
+        <div id="playlist-section">
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

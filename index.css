@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(0,0,0,0.5), rgb(0,0,0,0.5));
+    color: white;
+   
+}
+
+
+#main-container{
+    background-color:rgb(20,22,22, 0.4);
+    max-width: 1200px;
+    width: 100%;
+    height: 517px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    border-radius: 2%;
+    display: flex;
+    padding: 1%;
+    
+}
+
+#player-section{
+    width: 70%;
+    border-right: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-thumbnail{
+        width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#thumbnail-icon{
+        width: 300px;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.song-cover{
+    display: flex;
+        padding: 2%;
+    border-bottom: 1px solid black;
+    width: 90%;
+    cursor: pointer;
+}
+
+
+.thumbnail-icon-side-bar{
+    width: 100px;}
+
+#playlist-section{
+    overflow-y: scroll;
+    margin-left: 1%;
+    padding-top: 2%;
+}
+
+.songs-detail{
+    margin-left: 4%;
+}
+
+#player-controller-button{
+        display: flex;
+    justify-content: space-evenly;
+
+    
+}
+
+#player-controller-button{
+    margin-top: 18px;
+}
+
+.controller{
+    font-size: 28px;
+    cursor: pointer;
+}
+
+#progress-bar{
+    width: 300px;
+    cursor: pointer;
+}
+
+#speaker-mute{
+    display: none;
+}
+
+#pause{
+    display: none;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgray;
+  border-radius: 10px;
+}
+
+#volume-controller{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+#audiomp3{
+    display: none;
+}
+
+#speaker-container{
+        width: 34px;
+}
+
+#volume-range-hide{
+    display: none;
+}
+
+img{
+    border-radius: 30px;
+}
